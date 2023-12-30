@@ -31,7 +31,7 @@ body {
   display: grid;
   font-family: var(--font-family);
   color: var(--dark-color);
-  background: var(--bg-gradient);
+  background: var(--dark-color);
   @media all and (min-width: 720px) {
     padding: 2rem;
   }
