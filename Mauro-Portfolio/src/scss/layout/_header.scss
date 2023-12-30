@@ -1,0 +1,38 @@
+.home {
+    &__nav {
+      padding: 10px 10px 10px 10px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      &--links {
+        display: flex;
+        gap: 8px;
+        @media all and (min-width: 450px){
+          gap: 20px;
+          justify-content: center;
+        }
+        @media all and (min-width: 600px){
+          gap: 30px;
+        }
+        @media all and (min-width: 1200px){
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+
+.link:hover{
+  @include gradient();
+}
+
+.element{
+  font-size: 0.76rem;
+  text-align: center;
+  @media all and (min-width: 600px){
+    font-size: 13px;
+  }
+  @media all and (min-width: 720px){
+    font-size: 18px;
+  }
+}
