@@ -41,13 +41,13 @@ class ColorPalette {
   }
 
   setColors () {
-    // pick a random hue somewhere between 220 and 360
-    this.hue = ~~random(220, 360)
-    this.complimentaryHue1 = this.hue + 30
-    this.complimentaryHue2 = this.hue + 60
+    // pick a random hue somewhere between 120 and 240
+    this.hue = ~~random(120, 240)
+    this.complimentaryHue1 = this.hue + 45
+    this.complimentaryHue2 = this.hue + 90
     // define a fixed saturation and lightness
     this.saturation = 95
-    this.lightness = 50
+    this.lightness = 60
 
     // define a base color
     this.baseColor = hsl(this.hue, this.saturation, this.lightness)
