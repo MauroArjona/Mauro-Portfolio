@@ -1,0 +1,72 @@
+@mixin article() {
+  display: flex;
+  background: rgba(255, 255, 255, 0.375);
+  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+@mixin gradient() {
+  background-image: linear-gradient(
+    45deg,
+    var(--base) 25%,
+    var(--complimentary2)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+@mixin button() {
+  width: 50%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--light-color);
+  background: var(--dark-color);
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 150ms ease;
+  outline-color: hsl(var(--hue), 95%, 50%);
+}
+
+@mixin photo() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  width: 150px;
+  height: 150px;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@mixin container() {
+  display: flex;
+  right: 65%;
+  margin-top: 2rem;
+  margin-right: 20px;
+  transform: rotate(4deg);
+  position: absolute;
+  object-fit: cover;
+  overflow: hidden;
+  width: 200px;
+  height: 400px;
+  border-radius: 10px;
+  border: 10px solid #fff;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+@mixin list() {
+  display: grid;
+  padding-left: 0rem;
+  font-size: 1.1rem;
+}

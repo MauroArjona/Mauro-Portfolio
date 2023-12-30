@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Rentero Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- TODO: Add favicon <link rel="icon" href="./assets/images/favicon.png" />-->
+</head>
+
+<body>
+    <header class="home" id="home">
+        <nav class="home__nav">
+            <ul class="home__nav--links">
+                <li class="element"><a class="link" href="#home">Inicio</a></li>
+                <li class="element"><a class="link" href="#about">Sobre mí</a></li>
+                <li class="element"><a class="link" href="#skills">Habilidades</a></li>
+                <li class="element"><a class="link" href="#projects">Proyectos</a></li>
+                <li class="element"><a class="link" href="#contact">Contacta conmigo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="profile">
+        <div class="profile__social">
+            <ul class="profile__social--links">
+                <li><a class="link" href="https://www.linkedin.com/in/elena-clemente-rentero/" target=”_blank”><i
+                            class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                <li><a class="link" href="https://github.com/ElenaRentero" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+                <li><a class="link" href="https://twitter.com/Elenacleren" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+            </ul>
+        </div>
+        <!-- Canvas -->
+        <canvas class="orb-canvas" id="miCanvas" style="background-color: transparent;"></canvas>
+        <!-- Overlay -->
+        <div class="overlay">
+            <!-- Overlay inner wrapper -->
+            <div class="overlay__inner profile__article">
+                <div class="profile__photo">
+                    <img class="profile__photo--img" src="./assets/images/photo.jpg" alt="Foto personal" />
+                </div>
+                <h1 class="profile__article--name text-gradient">Elena Clemente Rentero</h1>
+                <h2 class="profile__article--title">Desarrolladora Web Junior</h2>
+                <p class="profile__article--text">Desarolladora web actualmente situada en Málaga,
+                    busco unirme a un
+                    equipo
+                    dinámico y colaborativo en el que pueda desarrollar mis habilidades.</p>
+                <!-- Links and buttons -->
+                <div class="overlay__btns">
+                    <a class="overlay__btn overlay__btn--transparent profile__article--button" target="_blank" rel="noreferrer" href=mailto:elenaclementerentero@gmail.com>Contacta conmigo</a>
+                </div>
+            </div>
+
+        </div>
+        <button id="scrollTopBtn" class="scroll-top-btn hidden"><img height="20px" src="./assets/images/scroll.png" alt="Subir al inicio"></button>
+    </section>
+    <section class="about" id="about">
+        <div class="about__container">
+          <img class="about__container--img" src="./assets/images/about.jpg" alt="Foto sobre mí">
+        </div>
+        <article class="about__article">
+            <h1 class="about__article--name">Sobre mí</h1>
+            <p class="about__article--text">Tras trabajar en el ámbito cultural y de la atención al cliente, decidí dar un cambio a mi vida entrando de lleno en el mundo de las nuevas tecnologías y la programación. Soy una persona proactiva y con ganas de aprender, busco mi primera oportunidad en el campo del desarrollo web. Eficiente, responsable y motivada, dispuesta a aportar mi granito de arena en proyectos y aprender de profesionales con experiencia.</p>
+            <button class="overlay__btn overlay__btn--transparent about__article--button" id="download-cv-button">Descarga CV</button>
+        </article>
+    </section>
+    <section class="skills" id="skills">
+        <h1 class="skills__title">Habilidades</h1>
+        <div class="skills__container">
+            <article class="skills__section">
+                <h2 class="skills__section--title">Front End</h2>
+                <ul class="list1">
+                    <li> <i class="fa-solid fa-code"></i> HTML5</li>
+                    <li> <i class="fa-solid fa-code"></i> CSS3</li>
+                    <li> <i class="fa-solid fa-code"></i> Flexbox</li>
+                    <li> <i class="fa-solid fa-code"></i> CSS Grid</li>
+                    <li> <i class="fa-solid fa-code"></i> JavaScript</li>
+                    <li> <i class="fa-solid fa-code"></i> SASS</li>
+                    <li> <i class="fa-solid fa-code"></i> Bootstrap</li>
+                    <li> <i class="fa-solid fa-code"></i> React</li>
+                </ul>
+            </article>
+            <article class="skills__section">
+                <h2 class="skills__section--title">Back End</h2>
+                <ul class="list2">
+                    <li> <i class="fa-solid fa-code"></i> NodeJs</li>
+                    <li> <i class="fa-solid fa-code"></i> ExpressJs</li>
+                    <li> <i class="fa-solid fa-code"></i> SQLite</li>
+                </ul>
+            </article>
+            <article class="skills__section">
+                <h2 class="skills__section--title">Soft Skills</h2>
+                <ul class="list3">
+                    <li> <i class="fa-solid fa-code-branch"></i> Autónoma</li>
+                    <li> <i class="fa-solid fa-code-branch"></i> Comunicativa</li>
+                    <li> <i class="fa-solid fa-code-branch"></i> Proactiva</li>
+                    <li> <i class="fa-solid fa-code-branch"></i> Eficiente</li>
+                    <li> <i class="fa-solid fa-code-branch"></i> Responsable</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h1 class="projects__title">Proyectos</h1>
+        <div class="projects__list">
+            <article class="projects__article">
+                <h2 class="projects__article--title">Rick and Morty Project</h2>
+                <ul class="projects__article--tech">
+                    <li><i class="fa-brands fa-react"></i></li>
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-sass"></i></li>
+                </ul>
+                <img class="projects__article--img" width="260px" src="./assets/images/rickandmorty.png"
+                    alt="Rick & Morty Project">
+                <ul class="projects__article--links">
+                    <a class="link" href="https://github.com/ElenaRentero/rick-and-morty-project" target=”_blank”><i
+                            class="fa-solid fa-file-code fa-2xl"></i></a>
+                    <a class="link" href="https://elenarentero.github.io/rick-and-morty-project/" target=”_blank”><i
+                            class="fa-solid fa-window-maximize fa-2xl"></i></a>
+                </ul>
+            </article>
+            <article class="projects__article">
+                <h2 class="projects__article--title">To Do App</h2>
+                <ul class="projects__article--tech">
+                    <li><i class="fa-brands fa-react"></i></li>
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-sass"></i></li>
+                </ul>
+                <img class="projects__article--img" width="260px" src="./assets/images/todoapp.png" alt="To Do App">
+                <ul class="projects__article--links">
+                    <a class="link" href="https://github.com/ElenaRentero/to-do-app" target=”_blank”><i
+                            class="fa-solid fa-file-code fa-2xl"></i></a>
+                    <a class="link" href="https://elenarentero-to-do-app.netlify.app/" target=”_blank”><i
+                            class="fa-solid fa-window-maximize fa-2xl"></i></a>
+                </ul>
+            </article>
+            <article class="projects__article">
+                <h2 class="projects__article--title">Breaking Bad Project</h2>
+                <ul class="projects__article--tech">
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-sass"></i></li>
+                </ul>
+                <img class="projects__article--img" width="260px" src="./assets/images/breakingbad.png" alt="Breaking Bad Project">
+                <ul class="projects__article--links">
+                    <a class="link" href="https://github.com/ElenaRentero/breaking-bad-project" target=”_blank”><i
+                            class="fa-solid fa-file-code fa-2xl"></i></a>
+                    <a class="link" href="https://elenarentero.github.io/breaking-bad-project/" target=”_blank”><i
+                            class="fa-solid fa-window-maximize fa-2xl"></i></a>
+                </ul>
+            </article>
+            <article class="projects__article">
+                <h2 class="projects__article--title">AdaCards Project</h2>
+                <ul class="projects__article--tech">
+                    <li><i class="fa-brands fa-node-js"></i></li>
+                    <li><i class="fa-brands fa-react"></i></li>
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-sass"></i></li>
+                </ul>
+                <img class="projects__article--img" width="260px" src="./assets/images/adacards.png" alt="AdaCards Project">
+                <ul class="projects__article--links">
+                    <a class="link" href="https://github.com/ElenaRentero/adacards-project" target=”_blank”><i
+                            class="fa-solid fa-file-code fa-2xl"></i></a>
+                    <a class="link" href="https://elenarentero-adacards.cyclic.app/" target=”_blank”><i
+                            class="fa-solid fa-window-maximize fa-2xl"></i></a>
+                </ul>
+            </article>
+            <article class="projects__article">
+                <h2 class="projects__article--title">Rings of Power Game</h2>
+                <ul class="projects__article--tech">
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                </ul>
+                <img class="projects__article--img" width="260px" src="./assets/images/ringsofpower.png" alt="Rings of Power Game">
+                <ul class="projects__article--links">
+                    <a class="link" href="https://github.com/ElenaRentero/rings-of-power-project" target=”_blank”><i
+                            class="fa-solid fa-file-code fa-2xl"></i></a>
+                    <a class="link" href="https://elenarentero.github.io/rings-of-power-project/" target=”_blank”><i
+                            class="fa-solid fa-window-maximize fa-2xl"></i></a>
+                </ul>
+            </article>
+            <article class="projects__article">
+                <h2 class="projects__article--title">Women in Tech</h2>
+                <ul class="projects__article--tech">
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-sass"></i></li>
+                </ul>
+                <img class="projects__article--img" width="260px" src="./assets/images/womenintech.png" alt="Women in Tech">
+                <ul class="projects__article--links">
+                    <a class="link" href="https://github.com/ElenaRentero/women-in-tech-project" target=”_blank”><i
+                            class="fa-solid fa-file-code fa-2xl"></i></a>
+                    <a class="link" href="https://elenarentero.github.io/women-in-tech-project/" target=”_blank”><i
+                            class="fa-solid fa-window-maximize fa-2xl"></i></a>
+                </ul>
+            </article>
+            <article class="projects__article">
+                <h2 class="projects__article--title">JavaScript Cards Project</h2>
+                <ul class="projects__article--tech">
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-sass"></i></li>
+                </ul>
+                <img class="projects__article--img" width="260px" src="./assets/images/javascriptcards.png" alt="JavaScript Cards Project">
+                <ul class="projects__article--links">
+                    <a class="link" href="https://github.com/ElenaRentero/javascript-cards-project" target=”_blank”><i
+                            class="fa-solid fa-file-code fa-2xl"></i></a>
+                    <a class="link" href="https://elenarentero.github.io/javascript-cards-project/" target=”_blank”><i
+                            class="fa-solid fa-window-maximize fa-2xl"></i></a>
+                </ul>
+            </article>
+            <article class="projects__article">
+                <h2 class="projects__article--title">Layout Project</h2>
+                <ul class="projects__article--tech">
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-sass"></i></li>
+                </ul>
+                <img class="projects__article--img" width="260px" src="./assets/images/layoutproject.png" alt="Layout Project">
+                <ul class="projects__article--links">
+                    <a class="link" href="https://github.com/ElenaRentero/layout-project" target=”_blank”><i
+                            class="fa-solid fa-file-code fa-2xl"></i></a>
+                    <a class="link" href="https://elenarentero.github.io/layout-project/" target=”_blank”><i
+                            class="fa-solid fa-window-maximize fa-2xl"></i></a>
+                </ul>
+            </article>
+            <article class="projects__article">
+                <h2 class="projects__article--title">Adalab Project</h2>
+                <ul class="projects__article--tech">
+                    <li><i class="fa-brands fa-react"></i></li>
+                    <li><i class="fa-brands fa-js"></i></li>
+                    <li><i class="fa-brands fa-sass"></i></li>
+                </ul>
+                <img class="projects__article--img" width="260px" src="./assets/images/adalabproject.png" alt="Adalab Project">
+                <ul class="projects__article--links">
+                    <a class="link" href="https://github.com/ElenaRentero/adalab-project" target=”_blank”><i
+                            class="fa-solid fa-file-code fa-2xl"></i></a>
+                    <a class="link" href="https://elenarentero.github.io/adalab-project/" target=”_blank”><i
+                            class="fa-solid fa-window-maximize fa-2xl"></i></a>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="contact__title">Contacta conmigo</h1>
+      <form action="https://formspree.io/f/moqzerap" method="POST" class="contact__form">
+        <div class="form-floating col-12">
+          <input type="text" name="Username" class="form-control" id="loatingTextarea2" placeholder="Username" required>
+          <label for="floatingInputGroup1">Nombre</label>
+        </div>
+        <div class="input-group mb-3 col-12" id="input">
+          <span class="input-group-text">@</span>
+          <div class="form-floating">
+            <input type="email" name="Email" class="form-control" id="floatingInputGroup1" placeholder="Email" style="margin-bottom: none !important;" required>
+            <label for="floatingInputGroup1">Email</label>
+          </div>
+        </div>
+        <div class="form-floating col-12">
+          <textarea name="Text" class="form-control" placeholder="Déjame un mensaje aquí" id="floatingTextarea2" style="height: 150px; resize: none;" required></textarea>
+          <label for="floatingTextarea2">Mensaje</label>
+        </div>
+        <button type="submit" class="overlay__btn overlay__btn--transparent">Enviar</button>
+      </form>
+    </section>
+    <script>
+        function init() {
+            const scrollTopBtn = document.querySelector('.scroll-top-btn')
+
+            function handleScroll() {
+                if (window.scrollY > 100) {
+                    scrollTopBtn.classList.remove('hidden')
+                } else {
+                    scrollTopBtn.classList.add('hidden')
+                }
+            }
+
+            window.addEventListener('scroll', handleScroll)
+
+            scrollTopBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
+            })
+        }
+
+        document.addEventListener('DOMContentLoaded', init)
+    </script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
