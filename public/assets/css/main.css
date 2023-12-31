@@ -118,7 +118,7 @@ table {
         font-size: 1.5rem; } }
   .profile__article--text {
     margin: 0 0 20px 20px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     width: 90%; }
     @media all and (min-width: 720px) {
@@ -347,12 +347,12 @@ ul {
         .about__article--name {
           font-size: 1.5rem; } }
     .about__article--text {
-      font-size: 1rem;
+      font-size: 1.1rem;
       line-height: 1.5rem;
       margin-bottom: 0; }
       @media all and (min-width: 700px) {
         .about__article--text {
-          font-size: 1rem;
+          font-size: 1.1rem;
           line-height: 1.75rem; } }
     .about__article--button {
       margin-top: 2rem;
