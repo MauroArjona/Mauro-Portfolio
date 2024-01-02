@@ -3,7 +3,7 @@
 En este repositorio puedes encontrar **mi portfolio web personal** realizado de manera responsive, siguiendo la filosofía mobile first.
 
 > **Note**
-> Enlace directo al proyecto pinchando en el siguiente [enlace](https://elenarentero-portfolio.netlify.app/)
+> Enlace directo al proyecto pinchando en el siguiente [enlace](https://mauro-arjona-portfolio.000webhostapp.com/)
 
 ## 📌 Descripción 
 
